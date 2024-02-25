@@ -33,25 +33,35 @@
                     <p>If you don't have project or class particpation enter '0' in below!</p>
                     <div class="sections">
                         <div class="question">
-                            <label for="numberinput0">Total and Obtained assignments number :</label>
+                            <label for="numberinput0">Total and Obtained assignments :</label>
                         </div>
                         <div class="inputs">
+                            <select name="numberinput10" id="numberinput10">
+                                <option value="10">10</option>
+                                <option value="15">15</option>
+                                <option value="20">20</option>
+                            </select>
                             <input type="number" id="numberinput8" required>
                             <input type="number" id="numberinput0" required>
                         </div>
                     </div>
                     <div class="sections">
                         <div class="question">
-                            <label for="numberinput1">Total and Obtained quizes number :</label>
+                            <label for="numberinput1">Total and Obtained quizes :</label>
                         </div>
                         <div class="inputs">
+                            <select name="numberinput11" id="numberinput11">
+                                <option value="10">10</option>
+                                <option value="15">15</option>
+                                <option value="20">20</option>
+                            </select>
                             <input type="number" id="numberinput9" required>
                             <input type="number" id="numberinput1" required>
                         </div>
                     </div>
                     <div class="sections">
                         <div class="question">
-                            <label for="numberinput2">Percantage and Total MID number :</label>
+                            <label for="numberinput2">Total and Obtained MID :</label>
                         </div>
                         <div class="inputs">
                             <select name="numberinput3" id="permid">
@@ -60,19 +70,15 @@
                                 <option value="35">35</option>
                             </select>
                             <input type="number" id="numberinput2" required>
+                            <input type="number" id="numberinput3" required>
                         </div>
                     </div>
                     <div class="sections">
-                        <label for="numberinput3">Obtained mid number:</label>
-                        <input type="number" id="numberinput3" required>
-                    </div>
-                    <div class="sections">
-                        <label for="numberinput4">Total Final number:</label>
-                        <input type="number" id="numberinput4" required>
-                    </div>
-                    <div class="sections">
-                        <label for="numberinput5">Obtained final number:</label>
-                        <input type="number" id="numberinput5" required>
+                        <label for="numberinput4">Total and Obtained Final number:</label>
+                        <div class="inputs">
+                            <input type="number" id="numberinput4" required>
+                            <input type="number" id="numberinput5" required>
+                        </div>
                     </div>
                     <div class="sections">
                         <div class="question">
@@ -88,7 +94,9 @@
                     </div>
                     <div class="sections" id="Project">
                         <label for="numberinput7">Project Presentation number:</label>
-                        <input type="number" id="numberinput7" required max=10>
+                        <div class="inputs">
+                            <input type="number" id="numberinput7" required max=10>
+                        </div>
                     </div>
                     <br>
                     <input type="submit" value="Check">

@@ -14,9 +14,10 @@ document.getElementById("gpa-form").addEventListener("submit", function (gpa){
     let pro = parseFloat(document.getElementById("numberinput7").value);
     let totalassi = parseFloat(document.getElementById("numberinput8").value);
     let totalqui = parseFloat(document.getElementById("numberinput9").value);
+    let assperc = parseFloat(document.getElementById("numberinput10").value);
 
 
-    let assig = assi * 10 / totalassi;
+    let assig = assi * assperc / totalassi;
     let quiz = qui * 10 / totalqui;
     let mid = obtmid * permid / totalmid;
     let final = obtfin * 40 / finaltotal;
