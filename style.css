@@ -215,6 +215,7 @@ footer{
         font-size: 13px;
     }
     .box{
+        margin: 0 25px;
         left: 0%;
     }
 }
