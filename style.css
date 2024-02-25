@@ -1,0 +1,220 @@
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgb(59, 47, 47);
+}
+
+.logo{
+    width: 100%;
+    text-align: center;
+}
+.lo{
+    width: 15%;
+}
+
+.heading {
+    font-size: 45px;
+    color: #19b7cc;
+    animation: mo 1s ease-in-out;
+    margin-top: 20px;
+}
+
+
+/* Animations keyframes */
+@keyframes mo {
+    0%{
+        transform: translateX(-150px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeout {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+@keyframes rainbow{
+    0%{
+        transform: translateY(-10px);
+    }
+    0%{
+        transform: translateY(10px);
+    }
+}
+
+/* welcome page */
+
+#welcomepage{
+    text-align: center;
+    padding: 100px 0px;
+    animation-name: fadeout;
+    animation: fadein 1s ease-in-out;
+}
+
+button{
+    color: yellow;
+    background: #5a4b4b;
+    padding: 5px;
+    border: 2px solid green;
+    border-radius: 30%;
+    margin-top: 30px;
+    font-size: 30px;
+    cursor: pointer;
+    transition: font-size 0.3s ease-in-out;
+    animation: rainbow 0.5s infinite alternate;
+}
+button:hover{
+    background: #91813a;
+    font-size: 35px;
+    animation: none;
+}
+
+/* main page calculator */
+
+#data {
+    padding: 30px 0px 0px 40px;
+    font-size: 15px;
+    background-color: #ffffff00;
+    color: bisque;
+    width: 1400px;
+    display: none;
+    animation: fadein 1s ease-in-out;
+}
+
+.sect{
+    display: flex;
+    justify-content: space-between;
+    opacity: 0.2;
+}
+
+.sections{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+input[type="number"] {
+    border: 1px solid black;
+    width: 50px;
+}
+
+input[type="submit"] {
+    background-color: #0f3311;
+    color: white;
+    padding: 2% 3%;
+    border: none;
+    cursor: pointer;
+    font-size: 100%;
+}
+
+input[type="number"]::after{
+    box-shadow: 5px 5px 10px 2px white;
+}
+
+input[type="submit"]:hover{
+    background-color: #2c260b;
+    box-shadow: 5px 5px 10px #5a4b4b;
+}
+
+.result {
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(206, 195, 187);
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+/* footer */
+
+footer{
+    text-align: center;
+    color: wheat;
+    background-color: rgb(49, 49, 58);
+    padding: 20px;
+    position: fixed;
+    bottom: 0%;
+    width: 100%;
+}
+
+/* popup box */
+
+.box{
+    color: #ffdf4f;
+    background-color: #5a4b4b;
+    padding: 50px 20px;
+    position: fixed;
+    top: 40%;
+    left: 30%;
+    border: 1px solid wheat;
+    text-align: center;
+}
+#close{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.last-section{
+    padding: 100px 10px;
+}
+/* mobile veiw*/
+@media screen and (max-width: 720px) {
+    .heading{
+        font-size: 5vw;
+    }
+    .lo{
+        width: 50%;
+    }
+    .crit{
+        display: flex;
+        justify-content: center;
+    }
+
+    #data {
+        width: fit-content;
+        padding: 20px 0 0 30px;
+        margin-right: 10px;
+    }
+    .sect{
+        display: block;
+    }
+    .sections{
+        font-size: 12px;
+    }
+    input[type="number"]{
+        font-size: 10px;
+        width: 30px;
+    }
+    .inputs{
+        display: flex;
+        justify-content: right;
+    }
+    p{
+        font-size: 13px;
+    }
+    .box{
+        left: 0%;
+    }
+}

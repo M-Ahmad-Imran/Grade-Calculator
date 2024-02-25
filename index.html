@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GRADE-CALCULATOR</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="logo">
+        <img class="lo" src="logo.jpg" alt="logo">
+    </div>
+    <div class="welcome" id="welcomepage">
+        <h1 class="heading">If you are quite worried about your GPA Calculation?
+            <br><br>
+            Don't Worry!
+            <br>
+            Click the Solution and solve it!
+        </h1>
+        <button onclick="show()">Solution</button>
+    </div>
+    <div id="data">
+        <div class="sect" id="st">
+            <div class="crit">
+                <img src="critaria.jpg" alt="Critaria" width="70%">
+            </div>
+            <div class="formpart">
+                <form id="gpa-form">
+                    <h1 class="heading" id="h">HERE IS YOUR SUBJECT GRADE CALCULATOR!</h1>
+                    <h3 id="result"></h3><br>
+                    <p>If you don't have project or class particpation enter '0' in below!</p>
+                    <div class="sections">
+                        <div class="question">
+                            <label for="numberinput0">Total and Obtained assignments number :</label>
+                        </div>
+                        <div class="inputs">
+                            <input type="number" id="numberinput8" required>
+                            <input type="number" id="numberinput0" required>
+                        </div>
+                    </div>
+                    <div class="sections">
+                        <div class="question">
+                            <label for="numberinput1">Total and Obtained quizes number :</label>
+                        </div>
+                        <div class="inputs">
+                            <input type="number" id="numberinput9" required>
+                            <input type="number" id="numberinput1" required>
+                        </div>
+                    </div>
+                    <div class="sections">
+                        <div class="question">
+                            <label for="numberinput2">Percantage and Total MID number :</label>
+                        </div>
+                        <div class="inputs">
+                            <select name="numberinput3" id="permid">
+                                <option value="30">30</option>
+                                <option value="20">20</option>
+                                <option value="35">35</option>
+                            </select>
+                            <input type="number" id="numberinput2" required>
+                        </div>
+                    </div>
+                    <div class="sections">
+                        <label for="numberinput3">Obtained mid number:</label>
+                        <input type="number" id="numberinput3" required>
+                    </div>
+                    <div class="sections">
+                        <label for="numberinput4">Total Final number:</label>
+                        <input type="number" id="numberinput4" required>
+                    </div>
+                    <div class="sections">
+                        <label for="numberinput5">Obtained final number:</label>
+                        <input type="number" id="numberinput5" required>
+                    </div>
+                    <div class="sections">
+                        <div class="question">
+                            <label for="numberinput6">Class Particpation number:</label>
+                        </div>
+                        <div class="inputs">
+                            <select name="numberinput6" id="perparti">
+                                <option value="10">10</option>
+                                <option value="5">5</option>
+                            </select>
+                            <input type="number" id="numberinput6" required max=10>
+                        </div>
+                    </div>
+                    <div class="sections" id="Project">
+                        <label for="numberinput7">Project Presentation number:</label>
+                        <input type="number" id="numberinput7" required max=10>
+                    </div>
+                    <br>
+                    <input type="submit" value="Check">
+                </form><br>
+            </div>
+        </div>
+        <div class="box" id="box">
+            <span id="close" onclick="pop()">X</span>
+            <h3>FIRST! <br>CHECK YOUR ASSESSMENT AND EVALUATION!<br> (IN YOUR COURSE CATALOGE)</h3>
+        </div>
+        <div class="last-section">
+            <h3>Thank you for using our calculator!</h3>
+        </div>
+    </div>
+    <footer>
+        <p>@Copyright reserved 2023 | M.AHMAD-TECH</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
