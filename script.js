@@ -17,7 +17,7 @@ document.getElementById("gpa-form").addEventListener("submit", function (gpa){
     let assperc = parseFloat(document.getElementById("numberinput10").value);
     let quizperc = parseFloat(document.getElementById("numberinput11").value);
     let totalparti = parseFloat(document.getElementById("numberinput12").value);
-    let totalfinal = parseFloat(document.getElementById("numberinput13").value);
+    let totalfinal = parseFloat(document.getElementById("totalfinal").value);
 
     let assig = assi * assperc / totalassi;
     let quiz = qui * quizperc / totalqui;
