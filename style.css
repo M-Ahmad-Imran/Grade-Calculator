@@ -132,6 +132,12 @@ input[type="submit"] {
     font-size: 100%;
 }
 
+.formpart{
+    background-color: #5a4b4b;
+    color: aqua;
+    padding: 10px;
+}
+
 input[type="number"]::after{
     box-shadow: 5px 5px 10px 2px white;
 }
