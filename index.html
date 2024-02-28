@@ -30,7 +30,7 @@
                 <form id="gpa-form">
                     <h1 class="heading" id="h">HERE IS YOUR SUBJECT GRADE CALCULATOR!</h1>
                     <h3 id="result"></h3><br>
-                    <p>If you don't have project or class particpation enter '0' in below!</p>
+                    <p>If you don't have project or class particpation enter '0' in all of its tabs!</p>
                     <div class="sections">
                         <div class="question">
                             <label for="numberinput0">Total and Obtained assignments :</label>
@@ -41,8 +41,8 @@
                                 <option value="15">15</option>
                                 <option value="20">20</option>
                             </select>
-                            <input type="number" id="numberinput8" required>
-                            <input type="number" id="numberinput0" required>
+                            <input type="number" id="numberinput8" required placeholder="Total">
+                            <input type="number" id="numberinput0" required placeholder="Obtain">
                         </div>
                     </div>
                     <div class="sections">
@@ -55,8 +55,8 @@
                                 <option value="15">15</option>
                                 <option value="20">20</option>
                             </select>
-                            <input type="number" id="numberinput9" required>
-                            <input type="number" id="numberinput1" required>
+                            <input type="number" id="numberinput9" required placeholder="Total">
+                            <input type="number" id="numberinput1" required placeholder="Obtain">
                         </div>
                     </div>
                     <div class="sections">
@@ -69,20 +69,20 @@
                                 <option value="20">20</option>
                                 <option value="35">35</option>
                             </select>
-                            <input type="number" id="numberinput2" required>
-                            <input type="number" id="numberinput3" required>
+                            <input type="number" id="numberinput2" required placeholder="Total">
+                            <input type="number" id="numberinput3" required placeholder="Obtain">
                         </div>
                     </div>
                     <div class="sections">
                         <label for="numberinput4 numberinput5">Total and Obtained Final number:</label>
                         <div class="inputs">
                             <select name="numberinput4" id="totalfinal">
-                                <option value="35">40</option>
-                                <option value="40">35</option>
+                                <option value="40">40</option>
+                                <option value="35">35</option>
                                 <option value="45">45</option>
                             </select>
-                            <input type="number" id="numberinput4" required placeholder="total">
-                            <input type="number" id="numberinput5" required placeholder="obt">
+                            <input type="number" id="numberinput4" required placeholder="Total">
+                            <input type="number" id="numberinput5" required placeholder="Obtain">
                         </div>
                     </div>
                     <div class="sections">
@@ -94,14 +94,20 @@
                                 <option value="10">10</option>
                                 <option value="5">5</option>
                             </select>
-                            <input type="number" id="numberinput12" required>
-                            <input type="number" id="numberinput6" required>
+                            <input type="number" id="numberinput12" required placeholder="Total">
+                            <input type="number" id="numberinput6" required placeholder="Obtain">
                         </div>
                     </div>
                     <div class="sections" id="Project">
-                        <label for="numberinput7">Project Presentation number:</label>
+                        <label for="numberinput7">Project Total and Obtain:</label>
                         <div class="inputs">
-                            <input type="number" id="numberinput7" required max=10>
+                            <select name="numberinput7" id="numberinput14">
+                                <option value="0">0</option>
+                                <option value="10">10</option>
+                                <option value="5">5</option>
+                            </select>
+                            <input type="number" id="numberinput13" required placeholder="Total" value="10">
+                            <input type="number" id="numberinput7" required placeholder="Obtain">
                         </div>
                     </div>
                     <br>

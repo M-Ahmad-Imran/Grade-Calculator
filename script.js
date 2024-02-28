@@ -1,33 +1,43 @@
 
 document.getElementById("gpa-form").addEventListener("submit", function (gpa){
     gpa.preventDefault();
-
-    let assi = parseFloat(document.getElementById("numberinput0").value);
-    let qui = parseFloat(document.getElementById("numberinput1").value);
+    
+    // Assignment
+    let assiobt = parseFloat(document.getElementById("numberinput0").value);
+    let totalassi = parseFloat(document.getElementById("numberinput8").value);
+    let assperc = parseFloat(document.getElementById("numberinput10").value);
+    // Quiz
+    let quiobt = parseFloat(document.getElementById("numberinput1").value);
+    let totalqui = parseFloat(document.getElementById("numberinput9").value);
+    let quizperc = parseFloat(document.getElementById("numberinput11").value);
+    // Mid Term
     let totalmid = parseFloat(document.getElementById("numberinput2").value);
     let obtmid = parseFloat(document.getElementById("numberinput3").value);
+    let permid = parseFloat(document.getElementById("permid").value);
+    // Final Term
     let finaltotal = parseFloat(document.getElementById("numberinput4").value);
     let obtfin = parseFloat(document.getElementById("numberinput5").value);
-    let parti = parseFloat(document.getElementById("numberinput6").value);
-    let permid = parseFloat(document.getElementById("permid").value);
-    let perparti = parseFloat(document.getElementById("perparti").value);
-    let pro = parseFloat(document.getElementById("numberinput7").value);
-    let totalassi = parseFloat(document.getElementById("numberinput8").value);
-    let totalqui = parseFloat(document.getElementById("numberinput9").value);
-    let assperc = parseFloat(document.getElementById("numberinput10").value);
-    let quizperc = parseFloat(document.getElementById("numberinput11").value);
-    let totalparti = parseFloat(document.getElementById("numberinput12").value);
     let totalfinal = parseFloat(document.getElementById("totalfinal").value);
+    // Class Participation
+    let partiobt = parseFloat(document.getElementById("numberinput6").value);
+    let perparti = parseFloat(document.getElementById("perparti").value);
+    let totalparti = parseFloat(document.getElementById("numberinput12").value);
+    // Project
+    let proobt = parseFloat(document.getElementById("numberinput7").value);
+    let prototal = parseFloat(document.getElementById("numberinput13").value);
+    let perpro = parseFloat(document.getElementById("numberinput14").value);
 
-    let assig = assi * assperc / totalassi;
-    let quiz = qui * quizperc / totalqui;
+    // Calculations 
+    let assig = assiobt * assperc / totalassi;
+    let quiz = quiobt * quizperc / totalqui;
     let mid = obtmid * permid / totalmid;
     let final = obtfin * totalfinal / finaltotal;
-    let particepate = parti * perparti / totalparti;
-    let proj = pro * 10 / 10;
+    let particepate = partiobt * perparti / totalparti;
+    let proj = proobt * perpro / prototal;
+    // Obtained Percentage
     let percent = assig + quiz + mid + final + particepate + proj;
-
     let o;
+    // Check the grade
     if(percent > 100){
         o = "Wrong Weightage!";
     }
