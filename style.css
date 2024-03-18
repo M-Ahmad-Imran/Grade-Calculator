@@ -15,7 +15,7 @@ body {
 }
 
 .HeaderSection{
-    background-color: burlywood;
+    background-color: color-mix(in srgb, lightblue 20%, green 50%);
     display: flex;
     justify-content: space-around;
 }
@@ -35,7 +35,7 @@ body {
     text-decoration: none;
 }
 .menu table th{
-    background-color: #91813a;
+    background-color: #388d27;
     border-radius: 10%;
 }
 .heading {
@@ -113,7 +113,7 @@ th{
 .welcome-heading{
     padding: 10px;
     color: antiquewhite;
-    background-color: rgb(119, 91, 91);
+    background-color: #397926;
 }
 
 button{
@@ -261,7 +261,7 @@ footer{
         width: 100%;
         text-align: center;
     }
-    .heading{
+    .heading,.welcome-heading{
         font-size: 5vw;
     }
     .lo{
