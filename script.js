@@ -62,8 +62,17 @@ document.getElementById("gpa-form").addEventListener("submit", function (gpa){
     else if (percent < 66 && percent >= 62) {
         o = "C";
     }
-    else if (percent <= 61) {
-        o = "F"
+    else if (percent < 62 && percent >= 58) {
+        o = "C-";
+    }
+    else if (percent < 58 && percent >= 54) {
+        o = "D+";
+    }
+    else if (percent < 54 && percent >= 50) {
+        o = "D";
+    }
+    else if (percent < 50){
+        o = "F";
     }
     let result = document.getElementById("result");
     if (o == "A") {
