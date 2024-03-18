@@ -1,7 +1,7 @@
 
-document.getElementById("gpa-form").addEventListener("submit", function (gpa){
+document.getElementById("gpa-form").addEventListener("submit", function (gpa) {
     gpa.preventDefault();
-    
+
     // Assignment
     let assiobt = parseFloat(document.getElementById("numberinput0").value);
     let totalassi = parseFloat(document.getElementById("numberinput8").value);
@@ -38,7 +38,7 @@ document.getElementById("gpa-form").addEventListener("submit", function (gpa){
     let percent = assig + quiz + mid + final + particepate + proj;
     let o;
     // Check the grade
-    if(percent > 100){
+    if (percent > 100) {
         o = "Wrong Weightage!";
     }
     else if (percent <= 100 && percent >= 86) {
@@ -71,16 +71,16 @@ document.getElementById("gpa-form").addEventListener("submit", function (gpa){
     else if (percent < 54 && percent >= 50) {
         o = "D";
     }
-    else if (percent < 50){
+    else if (percent < 50) {
         o = "F";
     }
-    let result = document.getElementById("result");
-    if (o == "A") {
-        result.textContent = "\nCongratulation! Your Grade of this subject is " + o + "! " + percent + "%";
+    document.getElementById("loader").style.display = 'block';
+    const grade = Math.round(percent);
+    if (grade >= 0 && grade <= 100) {
+        simulateLoading(grade);
     } else {
-        result.textContent = "\nThe Grade of this subject is " + o + "! " + percent;
+        alert("Please enter a valid grade percentage between 0 and 100.");
     }
-    
 })
 
 function show() {
@@ -93,4 +93,21 @@ function show() {
 function pop() {
     document.getElementById("box").style.display = "none";
     document.getElementById("st").style.opacity = "1"
+}
+
+function simulateLoading(grade) {
+    let progress = 0;
+    const loader = document.getElementById("loader");
+    const gradeText = document.getElementById("gradeText");
+
+    const interval = setInterval(function () {
+        progress++;
+        loader.style.borderTopColor = `hsl(${grade}, 100%, 50%)`;
+        gradeText.textContent = `Your Grade of this subject is : ${progress}%`;
+
+        if (progress >= grade) {
+            clearInterval(interval);
+            loader.style.display = "none"; // Hide the loader when the grade is reached
+        }
+    }, 10);
 }

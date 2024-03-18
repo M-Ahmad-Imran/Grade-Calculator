@@ -37,7 +37,8 @@
             <div class="formpart">
                 <form id="gpa-form">
                     <h1 class="heading" id="h">HERE IS YOUR SUBJECT GRADE CALCULATOR!</h1>
-                    <h3 id="result"></h3><br>
+                    <div class="loader" id="loader"></div>
+                    <h2 id="gradeText"></h2>
                     <p>If you don't have project or class particpation enter '0' in all of its tabs!</p>
                     <div class="sections">
                         <div class="question">
@@ -123,7 +124,7 @@
                         </div>
                     </div>
                     <br>
-                    <input type="submit" value="Check">
+                    <input type="submit" value="Check" onclick="startLoading()">
                 </form><br>
             </div>
             <div class="crit">
