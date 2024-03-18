@@ -15,7 +15,7 @@ body {
 }
 
 .HeaderSection{
-    background-color: color-mix(in srgb, lightblue 20%, green 50%);
+    background-color: color-mix(in srgb, lightblue 20%, pink 50%);
     display: flex;
     justify-content: space-around;
 }
@@ -35,13 +35,13 @@ body {
     text-decoration: none;
 }
 .menu table th{
-    background-color: #388d27;
+    background-color: #384d92;
     border-radius: 10%;
 }
 .heading {
     font-size: 45px;
     color: white;
-    background-color: #7fb34f;
+    background-color: #1d626e;
     animation: mo 1s ease-in-out;
     margin-top: 10px;
     padding: 10px;
@@ -112,8 +112,8 @@ th{
 
 .welcome-heading{
     padding: 10px;
-    color: antiquewhite;
-    background-color: #397926;
+    color: goldenrod;
+    background-color: color-mix(in srgb, lightblue 50%, pink 80%);
 }
 
 button{
@@ -177,16 +177,12 @@ input[type="submit"] {
     border-radius: 15%;
 }
 
-label{
-    background-color: #587e34;
-    padding: 5px;
-}
 p{
     font-size: 20px;
     padding: 10px 0;
 }
 .formpart{
-    background-color: #a3aa47;
+    background-color: #6d7b8a;
     color: black;
     margin: 0 20px;
     padding: 10px 30px;
