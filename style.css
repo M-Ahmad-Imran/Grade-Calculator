@@ -10,25 +10,60 @@ body {
     background-color: white;
     background-image: url("BG-Calculator-2.jpg");
     background-position: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+.HeaderSection{
+    background-color: burlywood;
+    display: flex;
+    justify-content: space-around;
 }
 
 .logo{
-    width: 100%;
-    text-align: center;
+    width: 50%;
+    text-align: left;
 }
 .lo{
     width: 15%;
 }
-
+.menu{
+    margin-top: 20px;
+}
+.menu a{
+    color: antiquewhite;
+    text-decoration: none;
+}
+.menu table th{
+    background-color: #91813a;
+    border-radius: 10%;
+}
 .heading {
     font-size: 45px;
     color: white;
-    background-color: #5a4b4b;
+    background-color: #7fb34f;
     animation: mo 1s ease-in-out;
-    margin-top: 20px;
-    padding: 20px 10px;
+    margin-top: 10px;
+    padding: 10px;
 }
 
+.crit{
+    width: 30%;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th{
+    text-align: center;
+    background-color: #31551a;
+    color: aqua;
+    padding: 10px;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
 
 /* Animations keyframes */
 @keyframes mo {
@@ -75,6 +110,12 @@ body {
     animation: fadein 1s ease-in-out;
 }
 
+.welcome-heading{
+    padding: 10px;
+    color: antiquewhite;
+    background-color: rgb(119, 91, 91);
+}
+
 button{
     color: yellow;
     background: #5a4b4b;
@@ -96,7 +137,7 @@ button:hover{
 /* main page calculator */
 
 #data {
-    padding: 30px 0px 0px 40px;
+    padding: 30px 0px 0px 60px;
     font-size: 15px;
     background-color: #ffffff00;
     color: black;
@@ -107,7 +148,8 @@ button:hover{
 
 .sect{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    gap: 5%;
     opacity: 0.2;
 }
 
@@ -118,24 +160,38 @@ button:hover{
     font-size: 20px;
 }
 
-input[type="number"] {
+select,input[type="number"] {
     border: 1px solid black;
-    width: 50px;
+    font-size: 15px;
+    padding: 2px;
 }
 
 input[type="submit"] {
     background-color: #0f3311;
     color: white;
     padding: 2% 3%;
+    margin: 3%;
     border: none;
     cursor: pointer;
     font-size: 100%;
+    border-radius: 15%;
 }
 
+label{
+    background-color: #587e34;
+    padding: 5px;
+}
+p{
+    font-size: 20px;
+    padding: 10px 0;
+}
 .formpart{
-    background-color: #5a4b4b;
-    color: aqua;
-    padding: 10px;
+    background-color: #a3aa47;
+    color: black;
+    margin: 0 20px;
+    padding: 10px 30px;
+    border-radius: 5%;
+    overflow: hidden;
 }
 
 input[type="number"]::after{
@@ -180,9 +236,13 @@ footer{
 }
 #close{
     position: absolute;
+    font-size: 20px;
+    font-weight: bold;
+    color: aqua;
     top: 10px;
     right: 10px;
-    font-size: 20px;
+    height: 20px;
+    width: 20px;
     cursor: pointer;
 }
 
@@ -194,6 +254,13 @@ footer{
     body{
         background-size: contain;
     }
+    .HeaderSection{
+        display: block;
+    }
+    .logo{
+        width: 100%;
+        text-align: center;
+    }
     .heading{
         font-size: 5vw;
     }
@@ -201,8 +268,7 @@ footer{
         width: 50%;
     }
     .crit{
-        display: flex;
-        justify-content: center;
+        width: 100%;
     }
 
     #data {
@@ -210,15 +276,19 @@ footer{
         padding: 20px 0 0 30px;
         margin-right: 10px;
     }
+    .formpart{
+        margin: 0;
+        padding: 10px 10px;
+    }
     .sect{
-        display: block;
+        display: grid;
     }
     .sections{
         font-size: 12px;
     }
     input[type="number"]{
-        font-size: 10px;
-        width: 30px;
+        font-size: 15px;
+        width: 40px;
     }
     .inputs{
         display: flex;

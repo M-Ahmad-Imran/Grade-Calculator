@@ -9,11 +9,22 @@
 </head>
 
 <body>
-    <div class="logo">
-        <img class="lo" src="logo.png" alt="logo">
+    <div class="HeaderSection">
+        <div class="logo">
+            <img class="lo" src="logo.png" alt="logo">
+        </div>
+        <div class="menu">
+            <table>
+                <tr>
+                    <th><a href="https://m-ahmad-imran.github.io/GRADE-CALCULATOR/">Home</a></th>
+                    <th><a href="https://mcom.pgc.edu.pk/Student/StdLogoff/.jsp">PGC-Portal</a></th>
+                    <th><a href="#">About Us</a></th>
+                </tr>
+            </table>
+        </div>
     </div>
     <div class="welcome" id="welcomepage">
-        <h1 class="heading">If you are quite worried about your GPA Calculation?
+        <h1 class="welcome-heading">If you are quite worried about your GPA Calculation?
             <br><br>
             Don't Worry!
             <br>
@@ -23,9 +34,6 @@
     </div>
     <div id="data">
         <div class="sect" id="st">
-            <div class="crit">
-                <img src="critaria.jpg" alt="Critaria" width="70%">
-            </div>
             <div class="formpart">
                 <form id="gpa-form">
                     <h1 class="heading" id="h">HERE IS YOUR SUBJECT GRADE CALCULATOR!</h1>
@@ -74,7 +82,9 @@
                         </div>
                     </div>
                     <div class="sections">
-                        <label for="numberinput4 numberinput5">Total and Obtained Final number:</label>
+                        <div class="question">
+                            <label for="numberinput4 numberinput5">Total and Obtained Final :</label>
+                        </div>
                         <div class="inputs">
                             <select name="numberinput4" id="totalfinal">
                                 <option value="40">40</option>
@@ -99,7 +109,9 @@
                         </div>
                     </div>
                     <div class="sections" id="Project">
-                        <label for="numberinput7">Project Total and Obtain:</label>
+                        <div class="question">
+                            <label for="numberinput7">Project Total and Obtain:</label>
+                        </div>
                         <div class="inputs">
                             <select name="numberinput7" id="numberinput14">
                                 <option value="0">0</option>
@@ -114,9 +126,44 @@
                     <input type="submit" value="Check">
                 </form><br>
             </div>
+            <div class="crit">
+                <table>
+                    <tr>
+                        <th colspan="2">Letter Grade Points Marks(%)</th>
+                    </tr>
+                    <tr>
+                        <th>A</th>
+                        <th>86-100%</th>
+                    </tr>
+                    <tr>
+                        <th>A-</th>
+                        <th>82-85%</th>
+                    </tr>
+                    <tr>
+                        <th>B+</th>
+                        <th>78-81%</th>
+                    </tr>
+                    <tr>
+                        <th>B</th>
+                        <th>74-77%</th>
+                    </tr>
+                    <tr>
+                        <th>B-</th>
+                        <th>70-73%</th>
+                    </tr>
+                    <tr>
+                        <th>C+</th>
+                        <th>66-69%</th>
+                    </tr>
+                    <tr>
+                        <th>C</th>
+                        <th>62-65%</th>
+                    </tr>
+                </table>
+            </div>
         </div>
         <div class="box" id="box">
-            <span id="close" onclick="pop()">X</span>
+            <span id="close" onclick="pop()">&times;</span>
             <h3>FIRST! <br>CHECK YOUR ASSESSMENT AND EVALUATION!<br> (IN YOUR COURSE CATALOGE)</h3>
         </div>
         <div class="last-section">
@@ -128,4 +175,5 @@
     </footer>
     <script src="script.js"></script>
 </body>
+
 </html>
