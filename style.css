@@ -237,9 +237,9 @@ input[type="submit"]:hover {
     }
 }
 
-.result {
-    font-family: 'Times New Roman', Times, serif;
-    color: rgb(206, 195, 187);
+#gradeText {
+    font-family: monospace;
+    color: #352d27;
     font-size: 20px;
     margin-bottom: 10px;
 }

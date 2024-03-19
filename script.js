@@ -75,9 +75,9 @@ document.getElementById("gpa-form").addEventListener("submit", function (gpa) {
         o = "F";
     }
     document.getElementById("loader").style.display = 'block';
-    const grade = Math.round(percent);
+    const grade = percent;
     if (grade >= 0 && grade <= 100) {
-        simulateLoading(grade);
+        simulateLoading(grade,o);
     } else {
         alert("Please enter a valid grade percentage between 0 and 100.");
     }
@@ -95,15 +95,16 @@ function pop() {
     document.getElementById("st").style.opacity = "1"
 }
 
-function simulateLoading(grade) {
-    let progress = 0;
+function simulateLoading(grade,o) {
+    let progress = 0.00;
+    progress = parseFloat(progress).toFixed(2);
     const loader = document.getElementById("loader");
     const gradeText = document.getElementById("gradeText");
 
     const interval = setInterval(function () {
         progress++;
         loader.style.borderTopColor = `hsl(${grade}, 100%, 50%)`;
-        gradeText.textContent = `Your Grade of this subject is : ${progress}%`;
+        gradeText.textContent = `Your Grade of this subject is ${progress}% ${o} (${grade.toFixed(2)})`;
 
         if (progress >= grade) {
             clearInterval(interval);
